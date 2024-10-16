@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+        }
+        .container{
+            height:100%;
+            width:100%;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../photos/maths.png);
+            background-position: center;
+            background-size: cover;
+            position:absolute;
+        }
+        .card{
+            width:700px;
+            height:600px;
+            position:relative;
+            margin:5% auto;
+            background-color:#fff;
+            padding: 5px;
+            overflow:hidden;
+
+        }
+        .buttons{
+            width:220px;
+            margin:35px;
+            position:relative;
+            box-shadow:0 0 20px 9px #ff61241f;
+            border-radius:30px;
+            text-align:center;
+
+        }
+        button{
+            padding:10px 30px;
+            cursor:pointer;
+            background:transparent;
+            border:0;
+            outline:none;
+            position:relative;
+        }
+        .socialpage{
+            margin:30px auto;
+            text-align:center;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="card"> 
+            <div class="buttons">
+                <button>Login</button>
+                <button>SignUp</button>
+            </div>
+
+            <div class="socialpage">
+                <img src="../photos/google.png" alt="" height="60px" width="60px">
+                <img src="../photos/facebooklogo.png" alt="" height="60px" width="60px">
+                <img src="../photos/linkdin.png" alt="" height="60px" width="60px">
+            </div>
+            <div class="loginpage">
+                <input type="text" placeholder="Enter Your email id"/><br/>
+                <input type="password" placeholder="Enter Your Password"/><br/>
+                <input type="checkbox"/>
+                <label for="forget Password">Forgot Password</label><br/>
+                <button>Login</button>
+            </div>
+            <div class="SignUpPage">
+                <input type="text" placeholder="Enter your Email">
+                <br/>
+                <input type="number" placeholder="Enter your mobile number">
+                <br/>
+                <input type="password" placeholder="Enter your password">
+                <br/>
+                <input type="password" placeholder="Enter re-password">
+                <br/>
+                <input type="checkbox"/>
+                <label for="">I agree to the Terma and conditions</label>
+                <br/>
+                <button>Signup</button>
+            </div>
+
+
+    </div>
+</div>
+    
+    
+</body>
+</html>

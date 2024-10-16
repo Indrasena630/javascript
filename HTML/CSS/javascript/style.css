@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Satisfy&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #def29e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232b2b2b' fill-opacity='0.05' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #333;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quote-container {
+    width: 90%;
+    max-width: 850px;
+    padding: 25px 35px;
+    border-radius: 15px;
+    background-color: rgba(41, 222, 56, 0.8);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.quote-container:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.quote-text {
+    font-size: 2.7rem;
+    color: #222;
+    line-height: 1.6;
+}
+
+.long-quote {
+    font-size: 1.8rem;
+    color: #444;
+}
+
+.fa-quote-left {
+    font-size: 3.5rem;
+    color: #5c5c5c;
+}
+
+.quote-author {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #555;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background: linear-gradient(45deg, #333, #666);
+    outline: none;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0.4rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+button:hover {
+    filter: brightness(115%);
+}
+
+button:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.fa-twitter {
+    font-size: 1.7rem;
+}
+
+/* Loader */
+.loader {
+    border: 12px solid #e0e0e0;
+    border-top: 12px solid #555;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 15px;
+    }
+
+    .quote-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quote-text {
+        font-size: 1.8rem;
+    }
+
+    .fa-quote-left {
+        font-size: 3rem;
+    }
+
+    .quote-author {
+        font-size: 1.5rem;
+    }
+}

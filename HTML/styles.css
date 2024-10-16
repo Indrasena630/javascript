@@ -1,0 +1,12 @@
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    border:2px solid blue;
+}
+.container div{
+    padding:20px;
+    background-color: blue;
+
+}

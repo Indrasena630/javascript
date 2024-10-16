@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        User Feedback Form
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: #1e90ff; /* Changed background to DodgerBlue */
+            font-family: Arial, sans-serif; /* Changed font family */
+            text-align: center;
+            color: #fff; /* Changed text color to white */
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #282828; /* Changed form background to dark gray */
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7); /* Darkened shadow */
+            border-radius: 10px; /* Added border radius for rounded corners */
+            color: #d3d3d3; /* Changed text color inside form to light gray */
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold; /* Made label text bold */
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #aaa; /* Lightened the border color */
+            border-radius: 5px; /* Increased border radius */
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+            background-color: #f8f8f8; /* Lightened the input background */
+            color: #333; /* Changed input text color to dark gray */
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px; /* Added spacing between radio/checkboxes */
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #ff4500; /* Changed button color to OrangeRed */
+            border: none; /* Removed border */
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            padding: 15px; /* Increased padding for a larger button */
+            color: #fff; /* Changed button text color to white */
+            cursor: pointer; /* Added cursor pointer on hover */
+        }
+
+        button:hover {
+            background-color: #e63900; /* Darker shade on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Feedback Form</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Full Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your full name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email Address
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your email address" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age Group
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your age group (e.g., 20-30)" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Your Current Role
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="developer">
+                    Developer
+                </option>
+                <option value="manager">Manager</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Do you find our platform helpful?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommend-yes">
+                <input type="radio" id="recommend-yes" 
+                       name="recommend">Yes
+            </label>
+            <label for="recommend-no">
+                <input type="radio" id="recommend-no" 
+                       name="recommend">No
+            </label>
+            <label for="recommend-maybe">
+                <input type="radio" id="recommend-maybe" 
+                       name="recommend">Maybe
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Technologies You Use
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="tech-c">
+                <input type="checkbox" id="tech-c" name="tech">C
+            </label>
+            <label for="tech-cpp">
+                <input type="checkbox" id="tech-cpp" name="tech">C++
+            </label>
+            <label for="tech-java">
+                <input type="checkbox" id="tech-java" name="tech">Java
+            </label>
+            <label for="tech-python">
+                <input type="checkbox" id="tech-python" name="tech">Python
+            </label>
+            <label for="tech-javascript">
+                <input type="checkbox" id="tech-javascript" name="tech">JavaScript
+            </label>
+            <label for="tech-react">
+                <input type="checkbox" id="tech-react" name="tech">React
+            </label>
+            <label for="tech-angular">
+                <input type="checkbox" id="tech-angular" name="tech">Angular
+            </label>
+            <label for="tech-django">
+                <input type="checkbox" id="tech-django" name="tech">Django
+            </label>
+            <label for="tech-spring">
+                <input type="checkbox" id="tech-spring" name="tech">Spring
+            </label>
+            <label for="tech-node">
+                <input type="checkbox" id="tech-node" name="tech">Node.js
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions?
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" 
+                      placeholder="Your feedback here...">
+            </textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit Feedback
+        </button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+h1{
+    background-color:greenyellow;
+}
+#mypara{
+    
+    color:black;
+    font-weight:600;
+}
+span{
+    background-color:rgb(68, 87, 13);
+    color:darkred;
+}
+*{
+    background-color:aquamarine
+}
